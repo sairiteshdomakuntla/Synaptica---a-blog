@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B2B2B;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .brand {
+    text-align: center;
+  }
+  
+  h1 {
+    /* font-family: 'Arial', sans-serif; */
+    color: #FFFFFF;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .caption {
+    color: #00FF7F;
+    font-style: italic;
+    margin: 5px 0 0 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .logoimg{
+    border-radius: 50%;
+  }
+  .active-link {
+    color: #00FF7F;
+  }
+  .user-welcome {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .welcome-text strong {
+    color: #00FF7F;
+    font-weight: 600;
+  }
+  
+  .signout-btn {
+    background-color: #00FF7F;
+    color: #2B2B2B;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+  }
+  
+  .signout-btn:hover {
+    background-color: #16d877;
+    color: #FFFFFF;
+  }
+  
+  @media (max-width: 768px) {
+    .user-welcome {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .signout-btn {
+      margin-top: 0.5rem;
+    }
+  }

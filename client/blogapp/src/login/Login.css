@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(135deg, #2B2B2B, #1C1C1C); /* Dark Charcoal Gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+div {
+    background-color: #2B2B2B; /* Dark Charcoal */
+    padding: 40px;
+    max-width: 500px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    color: #FFFFFF; /* White text */
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Fields */
+  input {
+    background-color: #3D3D3D; /* Dark Gray */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 100%; /* Full width of the container */
+    max-width: 350px; /* Maximum width to keep form proportional */
+    box-sizing: border-box;
+  }
+  
+  /* Placeholder Text */
+  input::placeholder {
+    color: #B0B0B0; /* Light Gray */
+  }
+  
+  /* Button */
+  button {
+    background-color: #00FF7F; /* Neon Green */
+    color: #2B2B2B; /* Dark Charcoal */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width for button as well */
+    max-width: 350px;
+  }
+  
+  /* Button Hover */
+  button:hover {
+    background-color: #20B2AA; /* Teal */
+  }
+  
+  /* Responsive Layout (Optional) */
+  @media (max-width: 768px) {
+    div {
+      width: 90%;
+    }
+  }
+  /* Radio button styles */
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .radio-input {
+    display: none;
+  }
+  
+  .radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #00FF7F; /* Neon Green */
+    margin-right: 10px;
+  }
+  
+  .radio-input:checked + .radio-button {
+    background-color: #00FF7F; /* Neon Green */
+    border: 2px solid #00FF7F; /* Neon Green */
+  }
+  .radio-group{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+  .div .form-container{
+    margin-top: 0;
+  }

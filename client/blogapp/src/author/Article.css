@@ -1,0 +1,207 @@
+/* General styling for the article container */
+.article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2B2B2B; /* Matches the dark background from other pages */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF; /* White text for better contrast */
+    text-align: left;
+    animation: fadeIn 0.8s ease; /* Subtle fade-in effect */
+}
+
+/* Title styling */
+.article-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF; /* White for contrast */
+    margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif; /* Matches your other fonts */
+    animation: slideDown 0.8s ease; /* Slide down effect */
+}
+
+/* Date styling */
+.article-meta {
+    font-size: 0.9rem;
+    color: #B0B0B0; /* Light Gray for subtlety */
+    margin-bottom: 20px;
+}
+
+.article-meta span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Content styling */
+.article-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #FFFFFF;
+    white-space: pre-line;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s ease; /* Smooth fade-in and slide-up effect */
+}
+
+/* Edit and Delete buttons styling */
+.article-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.article-actions span {
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #565758;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center; /* Align text and icons vertically */
+    gap: 5px; /* Space between text and icon */
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.article-actions span:hover {
+    background-color: #00FF7F; /* Neon Green on hover */
+    transform: translateY(-2px); /* Lift on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-actions span:active {
+    transform: scale(0.98); /* Button compresses slightly on click */
+    background-color: #232324;
+}
+
+.action-icon {
+    font-size: 1.2rem; /* Adjust icon size if necessary */
+}
+
+
+/* Animation for the whole page */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Comments Section */
+.comments {
+    margin-top: 20px;
+    background-color: #3D3D3D; /* Dark Gray for the comments container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* No comments yet message */
+.comments .no-comments {
+    color: #B0B0B0; /* Light Gray for subtlety */
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Individual Comment Styling */
+.comment {
+    background-color: #2B2B2B; /* Dark Charcoal for each comment */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Username styling */
+.comment-username {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00FF7F; /* Neon Green for usernames */
+}
+
+
+
+/* Comment Form Container */
+.comment-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin-top: 20px;
+}
+
+/* Comment Input */
+.comment-form input[type="text"] {
+    width: 100%; /* Full width for better alignment */
+    padding: 12px;
+    border: 1px solid #565758;
+    border-radius: 4px;
+    outline: none;
+    color: #FFFFFF; /* White text */
+    background-color: #3D3D3D; /* Dark background */
+    transition: border-color 0.3s ease;
+    font-size: 1rem; /* Adjust font size for consistency */
+}
+
+.comment-form input[type="text"]:focus {
+    border-color: #00FF7F; /* Neon Green border on focus */
+}
+
+/* Submit Button */
+.comment-form button {
+    background-color: #565758;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    margin-top: 10px; /* Space between input and button */
+}
+
+.comment-form button:hover {
+    background-color: #00FF7F; /* Neon Green on hover */
+}
+
+.comment-form button:active {
+    transform: scale(0.98); /* Button compresses slightly on click */
+}
+.comment-item {
+    display: flex; /* Aligns children in a row */
+    align-items: center; /* Vertically center the circle and text */
+    margin: 10px 0; /* Space between comments */
+}
+
+.comment-circle {
+    color: #232324; /* Dark color for the circle */
+    font-size: 1.5rem; /* Size of the circle */
+    margin-right: 8px; /* Space between the circle and comment text */
+}
+
+.comment-text {
+    color: #FFFFFF; /* Color for the comment text */
+    font-family: 'Exo 2', sans-serif; /* Your chosen font */
+    font-size: 1rem; /* Font size for the comment */
+    line-height: 1.5; /* Spacing for better readability */
+}
+
